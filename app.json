@@ -5,7 +5,7 @@
   "keywords": ["nginx", "whitelist"],
   "env": {
     "NGINX_ALLOW": {
-      "description": "IP address for whitelisting"
+      "description": "IP address for whitelisting",
       "value": "0.0.0.0"
     }
   },
