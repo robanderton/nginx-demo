@@ -1,0 +1,26 @@
+{
+  "name": "nginx-demo",
+  "description": "Basic demo of Nginx IP whitelisting on Heroku",
+  "repository": "https://github.com/robanderton/nginx-demo",
+  "keywords": ["nginx", "whitelist"],
+  "env": {
+    "NGINX_ALLOW": {
+      "description": "IP address for whitelisting"
+      "value": "0.0.0.0"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nginx"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
