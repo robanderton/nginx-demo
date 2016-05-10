@@ -1,4 +1,7 @@
+# nginx-demo
 Basic demo of IP whitelisting on Heroku using a simple Sinatra app, Puma webserver and Nginx proxy.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 If a request comes from a whitelisted IP the app processes the request, if not then a HTTP 403 forbidden response is returned.
 
